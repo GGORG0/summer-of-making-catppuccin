@@ -1,0 +1,33 @@
+{
+  "name": "summer-of-making-catppuccin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare": "husky",
+    "lint": "stylelint **/*.less",
+    "lint:fix": "stylelint **/*.less --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "license": "GPL-3.0-only",
+  "packageManager": "pnpm@10.13.1",
+  "devDependencies": {
+    "@catppuccin/palette": "^1.7.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "postcss-less": "^6.0.0",
+    "postcss-value-parser": "^4.2.0",
+    "prettier": "^3.6.2",
+    "stylelint": "^16.22.0",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-less": "^3.0.1",
+    "stylelint-use-nesting": "^6.0.0",
+    "svgo": "^4.0.0"
+  },
+  "lint-staged": {
+    "*.less": [
+      "stylelint **/*.less --fix"
+    ]
+  }
+}
