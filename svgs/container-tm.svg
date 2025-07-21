@@ -2,7 +2,7 @@
 <mask id="path-1-inside-1_95_1486" fill="white">
 <path d="M0 0H66V53H0V0Z"/>
 </mask>
-<path d="M0 0H66V53H0V0Z" fill="#E7D4BE"/>
-<path d="M0 0V3H66V0V-3H0V0Z" fill="#592F31" mask="url(#path-1-inside-1_95_1486)"/>
-<path d="M66 17H0" stroke="#7C4A33" stroke-opacity="0.5" stroke-width="4"/>
+<path d="M0 0H66V53H0V0Z" fill="#313244"/>
+<path d="M0 0V3H66V0V-3H0V0Z" fill="#585b70" mask="url(#path-1-inside-1_95_1486)"/>
+<path d="M66 17H0" stroke="#a6adc8" stroke-opacity="0.5" stroke-width="4"/>
 </svg>
