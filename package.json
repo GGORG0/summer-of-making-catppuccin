@@ -27,7 +27,11 @@
   },
   "lint-staged": {
     "*.less": [
+      "prettier --write",
       "stylelint **/*.less --fix"
+    ],
+    "!(*.less)": [
+      "prettier --write"
     ]
   }
 }

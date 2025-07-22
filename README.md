@@ -12,9 +12,9 @@ A [Catppuccin](https://catppuccin.com/) theme for the [Summer of Making](https:/
 1. Install the [Stylus](https://github.com/openstyles/stylus) extension for [Chrome (or Chromium-based browsers)](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/).
 
    **Note:** If you use Chrome, make sure to enable `Allow access to file URLs` in the Chrome extension settings for Stylus (visit `chrome://extensions/?id=clngdbkpkpeebahjckkjfobafhncgmne`).
+
 2. Go into the Stylus settings (by clicking the Stylus icon in your browser toolbar, and then the cogwheel icon), and then enable `Patch CSP to allow style assets` in the `Advanced` section.
-3. Click the
-[![Install the theme with Stylus](https://img.shields.io/badge/stylus-install-cba6f7?colorA=363a4f)](https://raw.githubusercontent.com/GGORG0/summer-of-making-catppuccin/refs/heads/master/som.user.less) button, and confirm it by clicking `Install style` in the top left corner of the page that opens.
+3. Click the [![Install the theme with Stylus](https://img.shields.io/badge/stylus-install-cba6f7?colorA=363a4f)](https://raw.githubusercontent.com/GGORG0/summer-of-making-catppuccin/refs/heads/master/som.user.less) button, and confirm it by clicking `Install style` in the top left corner of the page that opens.
 4. If you use [Dark Reader](https://darkreader.org/) or any similar dark mode extension, make sure to disable it for the Summer Of Making site.
 
 For more information, see the [Catppuccin userstyles documentation](https://userstyles.catppuccin.com/USAGE.html).
