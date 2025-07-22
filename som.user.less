@@ -170,10 +170,11 @@
       }
     }
 
-    /* Sidebar */
-    body > div > div > div > div > div.flex-col {
+    /* Sidebar, voting page's submit vote card */
+    body > div > div > div > div > div.flex-col,
+    div[data-controller="voting-steps"] > div:last-child > div.flex-col {
       /* Center */
-      > div.h-full {
+      > div:nth-child(2) {
         /* Center background */
         > div.bg-linear-to-b {
           background: @surface0;
@@ -409,6 +410,46 @@
       > div:nth-last-child(2)
       .text-gray-700 {
       color: @subtext0;
+    }
+
+    /* Voting page's project cards */
+    div[data-controller="voting-steps"] > div.grid > div {
+      background-color: @surface0;
+      /* stylelint-disable-next-line property-disallowed-list */
+      border: 2px solid @accent;
+
+      /* "Used AI" chip */
+      > div > div.flex > div:first-child > div.group {
+        span:first-child {
+          background-color: @accent;
+          color: @base;
+          border-color: transparent;
+
+          g {
+            stroke: @base;
+            color: @base;
+          }
+        }
+
+        /* "Built with help from AI models" tooltip */
+        span:last-child {
+          background-color: @surface1;
+          color: @text;
+          border-color: @accent;
+        }
+      }
+
+      .text-gray-800 {
+        color: @subtext1;
+      }
+
+      .text-gray-600 {
+        color: @subtext0;
+      }
+
+      .card-with-gradient {
+        background: @surface1 !important;
+      }
     }
   }
 }
