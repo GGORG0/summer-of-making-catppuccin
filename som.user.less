@@ -451,6 +451,28 @@
         background: @surface1 !important;
       }
     }
+
+    /* Shop's cards */
+    main > div > div:last-child .card-with-gradient {
+      /* Item subtitle */
+      .text-gray-700 {
+        color: @subtext1;
+      }
+
+      /* Item estimated time */
+      .text-gray-500 {
+        color: @subtext0;
+      }
+    }
+
+    /* Shop's region and section header - title and subtitle */
+    [class*="text-[#3a2f25]"] {
+      color: @text;
+    }
+
+    [class*="text-[#666]"] {
+      color: @subtext0;
+    }
   }
 }
 
