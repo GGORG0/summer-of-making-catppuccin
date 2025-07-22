@@ -170,6 +170,34 @@
       }
     }
 
+    .marble-button {
+      background-color: @accent;
+      color: @base;
+      border-color: lighten(@accent, 8%);
+      box-shadow:
+        0 6px 0 darken(@accent, 8%),
+        0 8px 15px rgb(0, 0, 0, 0.2);
+
+      &:hover {
+        background-color: lighten(@accent, 4%);
+      }
+    }
+
+    .card-pixel {
+      background-color: @surface0;
+      border-color: @accent;
+
+      box-shadow:
+        0 3px @surface2,
+        0 -3px @surface2,
+        3px 0 @surface2,
+        -3px 0 @surface2,
+        inset 3px 3px @accent,
+        inset -3px -3px @accent,
+        inset 6px 6px lighten(@accent, 20%),
+        inset -6px -6px lighten(@accent, 20%);
+    }
+
     /* Sidebar, voting page's submit vote card */
     body > div > div > div > div > div.flex-col,
     div[data-controller="voting-steps"] > div:last-child > div.flex-col {
@@ -472,6 +500,12 @@
 
     [class*="text-[#666]"] {
       color: @subtext0;
+    }
+
+    /* Map's bottom left project list */
+    [data-map-target="placeableProjects"] > div {
+      background-color: @surface1;
+      border-color: @accent;
     }
   }
 }
