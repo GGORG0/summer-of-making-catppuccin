@@ -108,6 +108,14 @@
       border-color: @accent;
     }
 
+    .\!border-som-dark {
+      --color-som-dark: @accent;
+
+      * {
+        --color-som-dark: @text;
+      }
+    }
+
     /* Sidebar icons */
     .som-link-content path {
       fill: @accent;
@@ -120,6 +128,11 @@
       --fg-color: @base;
       --hover-color: lighten(@accent, 8%);
       --click-color: darken(@accent, 8%);
+
+      /* Icons in buttons */
+      path[fill="#4A2D24"] {
+        fill: @base;
+      }
     }
 
     .som-button-secondary {
@@ -144,6 +157,17 @@
       --fg-color: @base;
       --hover-color: lighten(@green, 8%);
       --click-color: darken(@green, 8%);
+    }
+
+    .som-horizontal-input {
+      background-color: @surface1;
+
+      &[placeholder=" "] {
+        @svg: escape(
+          '<svg xmlns="http://www.w3.org/2000/svg" width="696" height="58" fill="none" viewBox="0 0 696 58"><path fill="@{surface2}" d="M0 0h696v58H0z"/><path stroke="@{accent}" stroke-dasharray="13 13" stroke-linecap="round" stroke-width="2" d="M1 46h694"/></svg>'
+        );
+        background-image: url("data:image/svg+xml,@{svg}");
+      }
     }
 
     /* Sidebar */
@@ -337,6 +361,54 @@
       .text-red-400 {
         color: @red;
       }
+    }
+
+    /* Icons in the project page */
+    path[fill="#4A2D24"] {
+      fill: @accent;
+    }
+
+    /* Project banner covering gradient */
+    div.absolute.inset-0.bg-gradient-to-t.to-transparent.pointer-events-none {
+      --tw-gradient-from: @surface0;
+    }
+
+    #devlogs {
+      /* Project timeline vertical line */
+      > div.border-5.absolute {
+        border-color: @accent;
+      }
+
+      /* Project timeline stalks */
+      > div > img {
+        @svg: escape(
+          '<svg xmlns="http://www.w3.org/2000/svg" width="75" height="98" fill="none" viewBox="-8 0 91 98"><path stroke="@{accent}" stroke-linecap="round" stroke-width="16" d="M6.013 6.5c-.011 11.5-.012 31-.01 51 0 9.434 3.605 12.977 8.577 18.906 13.959 16.647 27.593 15.28 33.587 15.522 5.995.244 8.57-.95 11.901-1.421 3.332-.472 5.215-1.414 8.13-2.386"/></svg>'
+        );
+        content: url("data:image/svg+xml,@{svg}");
+      }
+
+      /* Devlog "..." button */
+      div[data-controller="dropdown"] > div {
+        background-color: @surface1;
+        border-color: @accent;
+      }
+    }
+
+    /* Edit project page's Hackatime project list */
+    .selected-hackatime-projects > div {
+      background-color: @surface1;
+      border-color: @accent;
+
+      .text-gray-600 {
+        color: @subtext0;
+      }
+    }
+
+    /* Edit project page's "AI helped me build this" subtext */
+    form[data-controller="project-form"]
+      > div:nth-last-child(2)
+      .text-gray-700 {
+      color: @subtext0;
     }
   }
 }
