@@ -507,6 +507,34 @@
       background-color: @surface1;
       border-color: @accent;
     }
+
+    /* User profile page */
+    main > .profile-container {
+      .text-gray-800,
+      .text-gray-900 {
+        color: @text;
+      }
+
+      > div.grid
+        > div
+        > div.card-with-gradient
+        > div.card-content
+        > div.space-y-4
+        > div.space-y-3
+        > div.flex.items-center {
+        > div.bg-gray-200 {
+          background-color: @surface2;
+        }
+
+        &:hover {
+          background-color: @surface1;
+
+          a {
+            color: @accent;
+          }
+        }
+      }
+    }
   }
 }
 
