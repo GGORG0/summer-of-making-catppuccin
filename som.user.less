@@ -535,6 +535,48 @@
         }
       }
     }
+
+    /* User profile edit page */
+    main
+      > div.container
+      > div.card-with-gradient
+      > div.card-content
+      > div.space-y-6 {
+      > div.flex.items-center.justify-between {
+        > div > h1.text-gray-800 {
+          color: @text;
+        }
+        > a.text-gray-600 {
+          color: @subtext0;
+          &:hover {
+            color: @accent;
+          }
+        }
+      }
+
+      > form[action^="/users/"] {
+        .text-gray-700 {
+          color: @subtext0;
+        }
+
+        textarea {
+          color: @text;
+          border-color: @accent;
+        }
+
+        > div:last-child > div {
+          a {
+            border-color: transparent;
+            background-color: @surface1;
+            color: @text;
+          }
+          input {
+            background-color: @accent;
+            color: @base;
+          }
+        }
+      }
+    }
   }
 }
 
