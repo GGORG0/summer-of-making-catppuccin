@@ -18,3 +18,15 @@ A [Catppuccin](https://catppuccin.com/) theme for the [Summer of Making](https:/
 4. If you use [Dark Reader](https://darkreader.org/) or any similar dark mode extension, make sure to disable it for the Summer Of Making site.
 
 For more information, see the [Catppuccin userstyles documentation](https://userstyles.catppuccin.com/USAGE.html).
+
+## Screenshots
+
+![Campfire](./screenshots/campfire/preview.webp)
+
+![Profile](./screenshots/profile/preview.webp)
+
+![Project](./screenshots/project/preview.webp)
+
+![Shop](./screenshots/shop/preview.webp)
+
+![Voting](./screenshots/voting/preview.webp)

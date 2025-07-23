@@ -31,7 +31,7 @@
       "stylelint **/*.less --fix"
     ],
     "!(*.less)": [
-      "prettier --write"
+      "prettier --ignore-unknown --write"
     ]
   }
 }
