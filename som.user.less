@@ -134,6 +134,31 @@
       }
     }
 
+    /* _most_ modals */
+    [data-controller="modal"] > [class*="bg-[#F3ECD8]"] {
+      background-color: @surface0;
+      border-color: @accent;
+
+      /* Ship Certification Status modal */
+      .bg-soft-bone\/50 {
+        background-color: @surface1;
+        border-color: @accent;
+      }
+
+      .bg-green-50 {
+        background-color: @green;
+        border-color: @accent;
+
+        * {
+          color: @base;
+        }
+      }
+    }
+
+    .border-saddle-taupe {
+      border-color: @accent;
+    }
+
     /* Sidebar icons */
     .som-link-content path {
       fill: @accent;
